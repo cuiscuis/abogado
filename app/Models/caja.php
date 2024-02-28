@@ -10,4 +10,9 @@ class caja extends Model
     use HasFactory;
 
     protected $table = "caja";
+
+    public function caja()
+    {
+        return $this->hasMany(caja::class);
+    }
 }
