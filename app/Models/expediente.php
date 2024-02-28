@@ -17,4 +17,9 @@ class expediente extends Model
     ];
 
     protected $table = "expediente";
+
+    public function caja()
+    {
+        return $this->hasMany(caja::class);
+    }
 }

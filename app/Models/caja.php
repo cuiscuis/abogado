@@ -11,8 +11,8 @@ class caja extends Model
 
     protected $table = "caja";
 
-    public function caja()
+    public function expediente()
     {
-        return $this->hasMany(caja::class);
+        return $this->belongsTo(Expediente::class);
     }
 }
